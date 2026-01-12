@@ -25,6 +25,10 @@ const TESTIMONIALS = [
 ];
 
 export const Testimonials: React.FC = () => {
+  const handleApply = () => {
+    window.open('https://docs.qq.com/form/page/DVU1MRWtEWURtcVhx?nlc=1#/fill', '_blank');
+  };
+
   return (
     <div className="py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -56,7 +60,10 @@ export const Testimonials: React.FC = () => {
         
         <div className="mt-20 text-center">
           <p className="text-gray-500 text-sm italic mb-8">期待您的加入，共同创造更多精彩。</p>
-          <button className="px-10 py-4 bg-white text-black rounded-2xl font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-white/5">
+          <button 
+            onClick={handleApply}
+            className="px-10 py-4 bg-white text-black rounded-2xl font-bold hover:scale-105 active:scale-95 transition-all shadow-xl shadow-white/5"
+          >
             立即申请
           </button>
         </div>

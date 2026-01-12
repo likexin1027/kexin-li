@@ -11,6 +11,10 @@ const ACADEMY_ITEMS = [
 ];
 
 export const TutorialSection: React.FC = () => {
+  const handleApply = () => {
+    window.open('https://docs.qq.com/form/page/DVU1MRWtEWURtcVhx?nlc=1#/fill', '_blank');
+  };
+
   return (
     <div className="py-32">
       <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
@@ -29,6 +33,7 @@ export const TutorialSection: React.FC = () => {
           <p className="text-gray-500 text-xl font-light leading-relaxed">获得腾讯游戏深度支持，在这里，优质创意将获得全方位的价值释放。</p>
         </motion.div>
         <motion.button 
+          onClick={handleApply}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="px-10 py-4 border border-[#4fb7b3]/40 rounded-full text-[11px] font-black uppercase tracking-[0.3em] text-[#4fb7b3] hover:bg-[#4fb7b3] hover:text-black transition-all shadow-[0_0_30px_rgba(79,183,179,0.2)]"

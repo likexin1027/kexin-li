@@ -13,6 +13,14 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, isLoading }) => {
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
+  const handleApply = () => {
+    window.open('https://docs.qq.com/form/page/DVU1MRWtEWURtcVhx?nlc=1#/fill', '_blank');
+  };
+
+  const handleBenefits = () => {
+    window.open('https://docs.qq.com/doc/DVVRnV0JUUXRxaGx5', '_blank');
+  };
+
   return (
     <div className="relative min-h-[90vh] flex flex-col items-center justify-center pt-24 pb-16 px-6 overflow-hidden">
       {/* 呼吸球体背景 */}
@@ -52,14 +60,14 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, isLoading }) => {
         
         <div className="flex flex-wrap justify-center gap-8">
           <button 
-            onClick={() => onSearch('加入计划')}
+            onClick={handleApply}
             className="group relative px-12 py-5 bg-[#4fb7b3] text-black rounded-full font-bold transition-all hover:scale-110 active:scale-95 shadow-[0_0_40px_rgba(79,183,179,0.4)]"
           >
             申请加入
           </button>
           
           <button 
-             onClick={() => onSearch('创作权益')}
+             onClick={handleBenefits}
              className="px-12 py-5 bg-white/5 border border-white/10 text-white rounded-full font-bold hover:bg-white/10 transition-all backdrop-blur-md"
           >
             权益说明
