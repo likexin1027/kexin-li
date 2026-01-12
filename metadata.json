@@ -1,0 +1,8 @@
+{
+  "name": "101俱乐部 - 腾讯游戏视频创作社群",
+  "description": "基于游戏的视频创作社群，1%少数创作群体，影响99%的观众。由腾讯游戏长线扶持。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
