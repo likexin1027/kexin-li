@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { LogoAnimation } from './LogoAnimation';
@@ -18,7 +17,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, isLoading }) => {
   };
 
   const handleBenefits = () => {
-    window.open('https://docs.qq.com/doc/DVVRnV0JUUXRxaGx5', '_blank');
+    window.open('https://docs.qq.com/doc/DVVRnV0JUUXRxaGx5?electronTabTitle=%E8%85%BE%E8%AE%AF%E2%80%9C101%E4%BF%B1%E4%B9%90%E9%83%A8%E2%80%9D%E4%BB%8B%E7%BB%8D%E5%92%8C%E6%8A%A5%E5%90%8D&isOfflineNewFileFlag=true&opennew=1', '_blank');
   };
 
   return (
